@@ -72,3 +72,7 @@ def test_select_all_vegetarian_pets():
   assert rows[1] == ('martin', 'spinach')
   assert rows[2] == ('ricky', 'cough drops')
   assert rows[3] == ('shannon', 'turnips')
+
+  print("Resultados de la consulta select_all_vegetarian_pets:")
+  for row in rows:
+    print(f"({row[0]}, {row[1]})")
